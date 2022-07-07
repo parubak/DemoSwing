@@ -20,6 +20,7 @@ public class MyFrame extends JFrame {
         textField.setHorizontalAlignment(SwingConstants.RIGHT);
         textField.setForeground(Color.GREEN);
         textField.setBackground(Color.BLACK);
+        textField.setFont(new Font("Quartz",Font.PLAIN,25));
 
         getContentPane().add(textField, BorderLayout.PAGE_START);
         getContentPane().add(new CalcButtonsPanel(textField), BorderLayout.CENTER);

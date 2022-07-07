@@ -35,6 +35,10 @@ public class RezultButtonListener extends AbstractAction {
                     case "/":
                         if (Calc.VALUE_1 == 0 || Calc.VALUE_2 == 0) {
                             Calc.RESULT = 0;
+                            JOptionPane.showMessageDialog(null,
+                                    "Деление на ноль!",
+                                    "Error!!!",
+                                    JOptionPane.INFORMATION_MESSAGE);
                             break;
                         }
                         Calc.RESULT = Calc.VALUE_1 / Calc.VALUE_2;
